@@ -1,1 +1,48 @@
-# Docker-documentation
+# Commandes Docker 
+
+docker compose up      # Lancer
+docker compose down    # Arrêter et supprimer
+docker compose ps      # Voir les conteneurs actifs
+
+# Créer une base PostgreSQL avec docker run
+  docker run -d \
+  --name postgres-container \
+  -e POSTGRES_DB=ma_base \
+  -e POSTGRES_USER=mon_user \
+  -e POSTGRES_PASSWORD=mon_mot_de_passe \
+  -p 5432:5432 \
+  -v pgdata:/var/lib/postgresql/data \
+  postgres:16
+
+  Option
+Description
+-d
+Détache le conteneur (mode arrière-plan)
+--name postgres-container
+Nom du conteneur
+-e POSTGRES_DB=ma_base
+Nom de la base à créer automatiquement
+-e POSTGRES_USER=mon_user
+Nom de l’utilisateur
+-e POSTGRES_PASSWORD=...
+Mot de passe de l’utilisateur
+-p 5432:5432
+Expose le port local 5432 vers le conteneur
+-v pgdata:/var/lib/postgresql/data
+Volume persistant nommé pgdata
+postgres:16
+Image utilisée (PostgreSQL version 16)
+
+
+# Se connecter à PostgreSQL dans un conteneur
+
+docker exec -it postgres-container psql -U mon_user -d ma_base
+
+Aide psql
+
+# Une fois connecté :
+	•	Lister les bases : \l
+	•	Lister les tables : \dt
+	•	Afficher les colonnes : \d nom_table
+	•	Quitter : \q
+
