@@ -53,10 +53,12 @@ docker stop nom_du_container  // stopper un container
 
 # Docker compose exemple 
 ```typeScript
+version: "3.9"
+
 services:
   db:
     image: postgres:16
-    container_name: db
+    container_name: postgres-db
     restart: unless-stopped
     env_file:
       - .env
@@ -70,6 +72,7 @@ services:
   backend:
     build:
       context: ./backend
+    image: backend:1.0.0
     container_name: nest-backend
     restart: unless-stopped
     env_file:
@@ -84,8 +87,11 @@ services:
   frontend:
     build:
       context: ./frontend
+    image: frontend:1.0.0
     container_name: next-frontend
     restart: unless-stopped
+    env_file:
+      - .env
     depends_on:
       - backend
     ports:
