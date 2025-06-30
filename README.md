@@ -47,3 +47,8 @@ Aide psql
 	•	Quitter : \q
 
 https://docs.docker.com/reference/cli/docker/
+
+docker start nom_du_container  // relancer un container
+docker stop nom_du_container  // stopper un container
+
+
