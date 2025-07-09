@@ -28,6 +28,13 @@ docker network ls                          # Lister les réseaux
 docker network create <nom>                # Créer un réseau
 ```
 
+#### Nettoyage
+```zsh
+docker system prune                        # Supprimer les ressources inutilisées (⚠️)
+docker volume prune                        # Supprimer les volumes non utilisés
+docker image prune                         # Supprimer les images inutilisées
+```
+
 #### Images docker
 ```zsh
 docker pull <image>    # Télécharger une image depuis Docker Hub.
