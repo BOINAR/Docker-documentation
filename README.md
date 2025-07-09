@@ -21,6 +21,17 @@ docker compose down    # Arrêter et supprimer
 docker compose ps      # Voir les conteneurs actifs
 ```
 
+#### Images docker
+```zsh
+docker pull <image>
+Télécharger une image depuis Docker Hub.
+docker images
+Liste les images locales.
+docker rmi <image>
+Supprimer une image.
+docker build -t <nom>:<tag> .
+Construire une image depuis un Dockerfile.
+```
 
 
 
