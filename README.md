@@ -34,6 +34,15 @@ docker system prune                        # Supprimer les ressources inutilisé
 docker volume prune                        # Supprimer les volumes non utilisés
 docker image prune                         # Supprimer les images inutilisées
 ```
+#### Docker compose
+```zsh
+docker compose up                         # Lancer les services définis dans docker-compose.yml
+docker compose up -d                      # Lancer en arrière-plan
+docker compose down                       # Stopper et supprimer les services
+docker compose ps                         # Lister les services en cours
+docker compose logs -f                    # Suivre les logs en temps réel
+docker compose exec <service> bash        # Entrer dans un conteneur d’un service
+```
 
 #### Images docker
 ```zsh
