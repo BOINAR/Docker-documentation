@@ -1,3 +1,4 @@
+```yaml
 services:
   db:
     image: postgres:16
@@ -47,3 +48,4 @@ volumes:
 
 networks:
   app-network:
+```
