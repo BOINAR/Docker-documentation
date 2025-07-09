@@ -30,6 +30,20 @@ docker rmi <image>     # Supprimer une image.
 docker build -t <nom>:<tag> .  # Construire une image depuis un Dockerfile.
 ```
 
+#### container docker
+
+```zsh
+docker run <image>                          # Lancer un conteneur simple (en mode foreground).
+docker run -it <image> bash                 # Lancer un conteneur interactif avec un shell.
+docker run -d --name <nom> <image>          # Lancer un conteneur en arrière-plan.
+docker ps                                   # Liste les conteneurs en cours d’exécution.
+docker ps -a                                # Liste tous les conteneurs (même arrêtés).
+`docker stop <id|nom>`                      # Arrêter un conteneur
+`docker start <id|nom>`                     # Démarrer un conteneur
+`docker restart <id|nom>`                   # Redémarrer un conteneur
+`docker rm <id|nom>`                        # Supprimer un conteneur
+```
+
 #### Créer une base PostgreSQL avec docker run
 
 ```zsh
