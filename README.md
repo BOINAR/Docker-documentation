@@ -107,11 +107,6 @@ Aide psql
 
 https://docs.docker.com/reference/cli/docker/
 
-```zsh
-docker start <nom_du_container>  // relancer un container
-docker stop <nom_du_container>  // stopper un container
-```
-
 # Docker compose exemple 
 ```yaml
 version: "3.9"
