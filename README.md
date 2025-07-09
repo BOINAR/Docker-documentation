@@ -2,9 +2,18 @@
 
 ```zsh
 docker compose up      # Lancer
+```
+```zsh
 docker compose down    # Arrêter et supprimer
+```
+```zsh
 docker compose ps      # Voir les conteneurs actifs
 ```
+
+
+
+
+
 
 # Créer une base PostgreSQL avec docker run
 
