@@ -22,20 +22,13 @@ docker compose ps      # Voir les conteneurs actifs
 ```
 
 #### Images docker
+
 ```zsh
-docker pull <image>
-Télécharger une image depuis Docker Hub.
-docker images
-Liste les images locales.
-docker rmi <image>
-Supprimer une image.
-docker build -t <nom>:<tag> .
-Construire une image depuis un Dockerfile.
+docker pull <image>    # Télécharger une image depuis Docker Hub.
+docker images          # Liste les images locales.
+docker rmi <image>     # Supprimer une image.
+docker build -t <nom>:<tag> .  # Construire une image depuis un Dockerfile.
 ```
-
-
-
-
 
 # Créer une base PostgreSQL avec docker run
 
