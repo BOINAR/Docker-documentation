@@ -43,7 +43,6 @@ docker build -t <nom>:<tag> .  # Construire une image depuis un Dockerfile.
   postgres:16
 ```
 
-> 
 > -d                                  # Détache le conteneur (mode arrière-plan)
 > --name postgres-container           # Nom du conteneur
 > -e POSTGRES_DB=ma_base              # Nom de la base à créer automatiquement
