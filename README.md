@@ -9,16 +9,18 @@ docker info            # Infos sur le démon Docker en cours (conteneurs, images
 docker help            # ide globale ou docker <commande> --help pour une commande spécifique.
 ```
 
-
-
+#### Execution et logs
 ```zsh
-docker compose up      # Lancer
+docker exec -it <nom> bash                 # Ouvrir un shell dans un conteneur en cours
+docker logs <nom>                          # Voir les logs d’un conteneur
+docker inspect <nom>                       # Voir les détails techniques d’un conteneur
 ```
+
+#### Volumes
 ```zsh
-docker compose down    # Arrêter et supprimer
-```
-```zsh
-docker compose ps      # Voir les conteneurs actifs
+docker volume ls                           # Lister les volumes
+docker volume create <nom>                # Créer un volume
+docker volume rm <nom>                    # Supprimer un volume
 ```
 
 #### Images docker
