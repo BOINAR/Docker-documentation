@@ -56,7 +56,7 @@ postgres:16                         # Image utilisée (PostgreSQL version 16)
 
 
 
-# Se connecter à PostgreSQL dans un conteneur
+#### Se connecter à PostgreSQL dans un conteneur
 ```zsh
 docker exec -it postgres-container psql -U mon_user -d ma_base
 ```
