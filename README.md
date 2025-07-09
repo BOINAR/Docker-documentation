@@ -38,10 +38,10 @@ docker run -it <image> bash                 # Lancer un conteneur interactif ave
 docker run -d --name <nom> <image>          # Lancer un conteneur en arrière-plan.
 docker ps                                   # Liste les conteneurs en cours d’exécution.
 docker ps -a                                # Liste tous les conteneurs (même arrêtés).
-`docker stop <id|nom>`                      # Arrêter un conteneur
-`docker start <id|nom>`                     # Démarrer un conteneur
-`docker restart <id|nom>`                   # Redémarrer un conteneur
-`docker rm <id|nom>`                        # Supprimer un conteneur
+docker stop <id|nom>                      # Arrêter un conteneur
+docker start <id|nom>                     # Démarrer un conteneur
+docker restart <id|nom>                   # Redémarrer un conteneur
+docker rm <id|nom>                        # Supprimer un conteneur
 ```
 
 #### Créer une base PostgreSQL avec docker run
