@@ -30,7 +30,7 @@ docker rmi <image>     # Supprimer une image.
 docker build -t <nom>:<tag> .  # Construire une image depuis un Dockerfile.
 ```
 
-# Créer une base PostgreSQL avec docker run
+#### Créer une base PostgreSQL avec docker run
 
 ```zsh
   docker run -d \
