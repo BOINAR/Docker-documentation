@@ -18,8 +18,14 @@ docker inspect <nom>                       # Voir les détails techniques d’un
 #### Volumes
 ```zsh
 docker volume ls                           # Lister les volumes
-docker volume create <nom>                # Créer un volume
-docker volume rm <nom>                    # Supprimer un volume
+docker volume create <nom>                 # Créer un volume
+docker volume rm <nom>                     # Supprimer un volume
+```
+
+#### Réseaux
+```zsh
+docker network ls                          # Lister les réseaux
+docker network create <nom>                # Créer un réseau
 ```
 
 #### Images docker
