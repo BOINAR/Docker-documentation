@@ -1,10 +1,14 @@
 # Commandes Docker 
 
+```zsh
 docker compose up      # Lancer
 docker compose down    # Arrêter et supprimer
 docker compose ps      # Voir les conteneurs actifs
+```
 
 # Créer une base PostgreSQL avec docker run
+
+```zsh
   docker run -d \
   --name postgres-container \
   -e POSTGRES_DB=ma_base \
@@ -32,27 +36,32 @@ Expose le port local 5432 vers le conteneur
 Volume persistant nommé pgdata
 postgres:16
 Image utilisée (PostgreSQL version 16)
+```
 
 
 # Se connecter à PostgreSQL dans un conteneur
-
+```zsh
 docker exec -it postgres-container psql -U mon_user -d ma_base
+```
 
 Aide psql
 
 # Une fois connecté :
+```zsh
 	•	Lister les bases : \l
 	•	Lister les tables : \dt
 	•	Afficher les colonnes : \d nom_table
 	•	Quitter : \q
+```
 
 https://docs.docker.com/reference/cli/docker/
-
-docker start nom_du_container  // relancer un container
-docker stop nom_du_container  // stopper un container
+```zsh
+docker start <nom_du_container>  // relancer un container
+docker stop <nom_du_container>  // stopper un container
+```
 
 # Docker compose exemple 
-```typeScript
+```yaml
 version: "3.9"
 
 services:
