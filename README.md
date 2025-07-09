@@ -2,7 +2,6 @@
 
 
 #### Commandes générales
-
 ```zsh
 docker version         # Affiche la version client/serveur Docker.
 docker info            # Infos sur le démon Docker en cours (conteneurs, images, etc.).
@@ -24,7 +23,6 @@ docker volume rm <nom>                    # Supprimer un volume
 ```
 
 #### Images docker
-
 ```zsh
 docker pull <image>    # Télécharger une image depuis Docker Hub.
 docker images          # Liste les images locales.
@@ -33,7 +31,6 @@ docker build -t <nom>:<tag> .  # Construire une image depuis un Dockerfile.
 ```
 
 #### container docker
-
 ```zsh
 docker run <image>                          # Lancer un conteneur simple (en mode foreground).
 docker run -it <image> bash                 # Lancer un conteneur interactif avec un shell.
@@ -47,7 +44,6 @@ docker rm <id|nom>                          # Supprimer un conteneur
 ```
 
 #### Créer une base PostgreSQL avec docker run
-
 ```zsh
   docker run -d \
   --name postgres-container \
@@ -88,6 +84,7 @@ Aide psql
 ```
 
 https://docs.docker.com/reference/cli/docker/
+
 ```zsh
 docker start <nom_du_container>  // relancer un container
 docker stop <nom_du_container>  // stopper un container
