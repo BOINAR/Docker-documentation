@@ -41,8 +41,9 @@ docker build -t <nom>:<tag> .  # Construire une image depuis un Dockerfile.
   -p 5432:5432 \
   -v pgdata:/var/lib/postgresql/data \
   postgres:16
+```
 
-  Option
+> Option
 Description
 -d
 Détache le conteneur (mode arrière-plan)
@@ -59,8 +60,8 @@ Expose le port local 5432 vers le conteneur
 -v pgdata:/var/lib/postgresql/data
 Volume persistant nommé pgdata
 postgres:16
-Image utilisée (PostgreSQL version 16)
-```
+> Image utilisée (PostgreSQL version 16)
+
 
 
 # Se connecter à PostgreSQL dans un conteneur
