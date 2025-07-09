@@ -1,5 +1,16 @@
 # Commandes Docker 
 
+
+#### Commandes générales
+
+```zsh
+docker version         # Affiche la version client/serveur Docker.
+docker info            # Infos sur le démon Docker en cours (conteneurs, images, etc.).
+docker help            # ide globale ou docker <commande> --help pour une commande spécifique.
+```
+
+
+
 ```zsh
 docker compose up      # Lancer
 ```
