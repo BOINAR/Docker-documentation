@@ -43,24 +43,15 @@ docker build -t <nom>:<tag> .  # Construire une image depuis un Dockerfile.
   postgres:16
 ```
 
-> Option
-Description
--d
-Détache le conteneur (mode arrière-plan)
---name postgres-container
-Nom du conteneur
--e POSTGRES_DB=ma_base
-Nom de la base à créer automatiquement
--e POSTGRES_USER=mon_user
-Nom de l’utilisateur
--e POSTGRES_PASSWORD=...
-Mot de passe de l’utilisateur
--p 5432:5432
-Expose le port local 5432 vers le conteneur
--v pgdata:/var/lib/postgresql/data
-Volume persistant nommé pgdata
-postgres:16
-> Image utilisée (PostgreSQL version 16)
+> 
+> -d                                  # Détache le conteneur (mode arrière-plan)
+> --name postgres-container           # Nom du conteneur
+> -e POSTGRES_DB=ma_base              # Nom de la base à créer automatiquement
+> -e POSTGRES_USER=mon_user           # Nom de l’utilisateur
+> -e POSTGRES_PASSWORD=...            # Mot de passe de l’utilisateur
+> -p 5432:5432                        # Expose le port local 5432 vers le conteneur
+> -v pgdata:/var/lib/postgresql/data  # Volume persistant nommé pgdata
+> postgres:16                         # Image utilisée (PostgreSQL version 16)
 
 
 
